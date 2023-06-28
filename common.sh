@@ -8,6 +8,6 @@ func_nodejs() {
   curl -sL https://rpm.nodesource.com/setup_lts.x | bash
   yum install nodejs -y
 
-  print_head "Create application user"
+  print_head "Add application user"
   useradd ${app_user}
 }
