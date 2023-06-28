@@ -10,4 +10,7 @@ func_nodejs() {
 
   print_head "Add application user"
   useradd ${app_user}
+
+  print-head "Create application directory"
+  mkdir /app
 }
