@@ -1,4 +1,4 @@
-app_user = roboshop
+app_user=roboshop
 print_head() {
   echo -e "\e[35m>>>$1>>>\e[0m"
 }
