@@ -1,5 +1,5 @@
 app_user=roboshop
-tmp.log=/tmp/roboshop.log
+tmp_log=/tmp/roboshop.log
 
 func_print_head() {
   echo -e "\e[33m>>>$*<<<\e[0m"
@@ -19,7 +19,7 @@ func_stat_check() {
 
 func_maven() {
   func_print_head "Install Maven"
-  yum install maven -y &>>$tmp.log
+  yum install maven -y &>>$tmp_log
   func_stat_check $?
 
   func-print_head "Add application user"
