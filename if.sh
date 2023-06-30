@@ -8,6 +8,6 @@ if [ "fruit_name" == "mango" ]
     echo fruit does not exist
     fi
 
-     if [ -z "app_user" ]; then
+     if [ -z "$app_user" ]; then
         echo roboshop app user is missing
         fi
