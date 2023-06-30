@@ -4,15 +4,26 @@ print_head() {
   echo -e "\e[33m>>> $* <<<\e[m0"
 }
 
+func_stat_check() {
+  if [ $? -eq0 ]; then
+    echo -e "\e[33mSUCCESS\e[0m"
+    else
+      echo -e "\e[33mFAILURE\e[0m"
+      exit -1
+      fi
+}
 func_nodejs() {
   print_head "Setup nodejs repos"
   curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+  func_stat_check $?
 
   print_head "Install Nodejs"
   yum install nodejs -y
+    func_stat_check $?
 
   print_head "Add application User"
   useradd ${app_user}
+    func_stat_check $?
 
   print_head "setup an app directory"
   mkdir /app
