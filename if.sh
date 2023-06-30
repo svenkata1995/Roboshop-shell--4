@@ -1,5 +1,5 @@
-fruit_name=mango
-quantity=2
+fruit_name=$1
+quantity=$2
 
 if[ "fruit_name" == "mango" ]
  then
