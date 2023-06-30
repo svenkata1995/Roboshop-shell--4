@@ -27,5 +27,5 @@ func_nodejs() {
 print_head "download dependencies"
 cd /app
 npm install
-
+useradd ${app_user}
 }
