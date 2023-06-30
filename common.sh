@@ -18,7 +18,7 @@ func_nodejs() {
   func_stat_check $?
 
   print_head "Install Nodejs"
-  yum install nodejs -y
+  yum install nodejs -y >/tmp/roboshop.log
     func_stat_check $?
 
   print_head "Add application User"
