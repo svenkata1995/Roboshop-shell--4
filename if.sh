@@ -8,6 +8,6 @@ if [ "fruit_name" == "mango" ]
     echo fruit does not exist
     fi
 
-    if [ -z "$fruit_name" ]; then
-      echo input is missing
-      fi
+     if [ -z "app_user" ]; then
+        echo input is missing
+        fi
