@@ -7,3 +7,7 @@ if [ "fruit_name" == "mango" ]
   else
     echo fruit does not exist
     fi
+
+    if [ _z "$fruit_name" ]; then
+      echo input is missing
+      fi
