@@ -22,7 +22,7 @@ func_nodejs() {
     func_stat_check $?
 
   print_head "Add application User"
-  useradd ${app_user}
+  useradd ${app_user} &>>/temp/roboshop.log
     func_stat_check $?
 
   print_head "setup an app directory"
