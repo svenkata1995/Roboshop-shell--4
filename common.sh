@@ -22,7 +22,7 @@ func_maven() {
   yum install maven -y &>>$tmp_log
   func_stat_check $?
 
-  func-print_head "Add application user"
+  func_print_head "Add application user"
   useradd ${app_user}
   func_stat_check $?
 }
