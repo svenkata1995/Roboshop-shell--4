@@ -5,7 +5,7 @@ print_head() {
 }
 
 func_stat_check() {
-  if [ $1 - eq0 ]; then
+  if [ $1 -eq0 ]; then
     echo -e "\e[33mSUCCESS\e[0m"
     else
       echo -e "\e[33mFAILURE\e[0m"
