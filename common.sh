@@ -19,7 +19,7 @@ func_stat_check() {
 
 func_maven() {
   func_print_head "Install Maven"
-  yum install maven -y &>>/tmp.log
+  yum install maven -y &>>$tmp.log
   func_stat_check $?
 
   func-print_head "Add application user"
