@@ -9,5 +9,5 @@ if [ "fruit_name" == "mango" ]
     fi
 
      if [ -z "app_user" ]; then
-        echo input is missing
+        echo roboshop app user is missing
         fi
