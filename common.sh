@@ -6,7 +6,7 @@ func_print_head() {
 }
 
 func_stat_check() {
-  if [$1 -eq 0 ]; then
+  if [ $1 -eq 0 ]; then
     echo -e "\e[34mSUCCESS\e[0m"
     else
       echo refer to the file tmp/roboshop.log for more information
