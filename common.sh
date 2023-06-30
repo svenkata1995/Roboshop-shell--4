@@ -1,7 +1,7 @@
 app_user=roboshop
 
 print_head() {
-  echo -e "\e[33m>>>$*<<<\e[m0"
+  echo -e "\e[35m>>> $* <<<\e[m0"
 }
 
 func_stat_check() {
