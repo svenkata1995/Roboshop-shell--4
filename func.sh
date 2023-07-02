@@ -19,10 +19,10 @@
 fruit=$1
  case fruit in
  apple)
-   echo price - 50$
+   echo price - 5$
    ;;
  bananna)
-   echo price - 20$
+   echo price - 2$
    ;;
  *)
    echo fruit is not found
