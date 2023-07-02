@@ -25,4 +25,21 @@ func_maven() {
   func_print_head "Add application user"
   useradd ${app_user}
   func_stat_check $?
+
+  func_print_head "setup an app directory"
+  mkdir /app
+  func_stat_check $?
+
+  func_print_head "Download the application code to created app directory"
+  curl -L -o /tmp/shipping.zip https://roboshop-artifacts.s3.amazonaws.com/shipping.zip
+  cd /app
+  func_stat_check $?
+
+  func_print_head "Extract the file content"
+  unzip /tmp/shipping.zip
+  func_stat_check $?
+
+
+
+
 }
