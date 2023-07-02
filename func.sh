@@ -13,4 +13,4 @@
 #echo second argument - $2
 #echo all arguments - $* 0r $@
 #echo no. 0f arguments - $#
-echo -e "sravya\t\divya\t\t\sai
+echo -e "sravya\t\divya\t\t\sai"
