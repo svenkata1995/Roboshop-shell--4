@@ -13,4 +13,4 @@
 #echo second argument - $2
 #echo all arguments - $* 0r $@
 #echo no. 0f arguments - $#
-echo -e "line1\nline2\line3"
+echo -e "line1\nline2\nline3"
