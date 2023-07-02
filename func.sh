@@ -1,10 +1,10 @@
 date = 2/7/23
 echo today date is ${date}
 
-date = (date+%f)
+date=$(date+%f)
 echo today date is $(date)
 
-Arth = ((2+5*8))
+Arth=$((2+5*8))
 echo Arth = ${Arth}
 
 echo scriptname - $0
