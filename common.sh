@@ -38,4 +38,9 @@ func_maven() {
   func_print_head "Extract the file content"
   unzip /tmp/shipping.zip
   func_stat_check $?
+
+  func_name() {
+    echo first argument =
+    echo secobd argument =
+  }
 }
