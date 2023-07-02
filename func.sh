@@ -15,4 +15,16 @@
 #echo no. 0f arguments - $#
 #
 #echo -e "sravya\t\divya\t\t\sai"
-echo c - $c
+#echo c - $c
+fruit-$1
+ case fruit in
+ apple)
+   echo price - 50$
+   ;;
+ bananna)
+   echo price - 20$
+   ;;
+ *)
+   echo fruit is not found
+   ;;
+ esac
