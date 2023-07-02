@@ -17,6 +17,7 @@
 #echo -e "sravya\t\divya\t\t\sai"
 #echo c - $c
 fruit=$1
+
  case fruit in
  apple)
    echo price - 5$
